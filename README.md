@@ -43,7 +43,7 @@ $ python3 manage.py runserver
 - Goto Embed tab
 - Choose _Start slideshow as soon as the player loads_ and _Restart the slideshow after the last slide_
 - Click on publish, HTML embed appears
-- Just copy src of the <iframe> tag (Eg. https://docs.google.com/presentation/d/1ETZi4bNQov9M5UEEnJEJgj3s40vZ_ORsddaeisUUcamE5kW0/embed?start=true&loop=true&delayms=3000)
+- Just copy src of the <iframe> tag Eg. https://docs.google.com/presentation/d/1ETZi4bNQov9M5UEEnJEJgj3s40vZ_ORsddaeisUUcamE5kW0/embed?start=true&loop=true&delayms=3000
 - Login to Leapfrog bulletin board
 - Click on Kiosks
 - Click on ADD KIOSK
