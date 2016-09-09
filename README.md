@@ -21,7 +21,6 @@ A channel through which Leapfrog updates it's employees with its on-going acti
 ```bash
 $ cd LF-Bulletin-board
 $ python3 -m venv venv
-$ source venv/
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ python3 manage.py makemigrations
