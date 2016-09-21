@@ -91,7 +91,6 @@ DATABASES = {
         # 'HOST': '',
         # 'PORT': '',
     }
-    }
 }
 
 
