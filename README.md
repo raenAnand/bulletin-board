@@ -76,12 +76,10 @@ __Note: If you make changes in slide. Make sure you add new Google Docs URL or j
 #### How to embed YouTube videos
 
 - Go to Leapfrog bulletin board dashboard
-- Add youtube videos to playlist
 - Click on YouTubes
 - Click on ADD YOUTUBE
 - Paste YouTube video URL
 - Click on save Repeat the steps to add more videos in playlist
-- Set timing to play youtube video
 - Go to dashboard
 - Click on “Schedules”
 - Click on “ADD SCHEDULE”
@@ -92,4 +90,3 @@ __Note: If you make changes in slide. Make sure you add new Google Docs URL or j
 ### License?
 
 - Leapfrog Bulletin Board is licensed under th MIT license. See [License File](https://github.com/leapfrogtechnology/LF-Bulletin-board/blob/master/LICENSE.txt) for more information.
-
