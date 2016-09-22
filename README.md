@@ -12,7 +12,7 @@ Leapfrog Bulletin Board is a Web App that helps to build an interactive Kiosk.
 
 ### Deploy on Heroku
 
-- Click here [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leapfrogtechnology/LF-Bulletin-board/tree/master)
+- Click here on [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leapfrogtechnology/LF-Bulletin-board/tree/master)
 - Enter desired App Name
 - Click on “Deploy for Free” button
 - Click on “Manage App” button
@@ -57,12 +57,12 @@ $ python3 manage.py runserver
 - Goto Embed tab
 - Choose Start slideshow as soon as the player loads and Restart the slideshow after the last slide
 - Click on publish, HTML embed appears
-- Just copy src of the <iframe> tag Eg. https://docs.google.com/presentation/d/1ETZi4bNQov9M5UEEnJEJgj3s40vZ_ORsddaeisUUcamE5kW0/embed?start=true&loop=true&delayms=3000
+- Just copy src of the &lt;iframe&gt; tag Eg. https://docs.google.com/presentation/d/1ETZi4bNQov9M5UEEnJEJgj3s40vZ_ORsddaeisUUcamE5kW0/embed?start=true&loop=true&delayms=3000
 - Open bulletin board dashboard
 - Click on Kiosks
 - Click on ADD KIOSK
 - Paste the URL and click on Save
-__Note: If you make changes in slide. Make sure you add new Google Docs URL or just update delayms value to new value. If this is not done slide changes in bulletin board will not reflected._
+_Note: If you make changes in slide. Make sure you add new Google Docs URL or just update delayms value to new value. If this is not done slide changes in bulletin board will not reflected._
 
 
 #### How to embed Website in bulletin board
@@ -79,8 +79,8 @@ __Note: If you make changes in slide. Make sure you add new Google Docs URL or j
 - Click on YouTubes
 - Click on ADD YOUTUBE
 - Paste YouTube video URL
-- Click on save Repeat the steps to add more videos in playlist
-- Go to dashboard
+- Click on save Repeat the steps to add more videos in play list
+- Go back to dashboard
 - Click on “Schedules”
 - Click on “ADD SCHEDULE”
 - Enter Start time and End time
@@ -90,3 +90,4 @@ __Note: If you make changes in slide. Make sure you add new Google Docs URL or j
 ### License?
 
 - Leapfrog Bulletin Board is licensed under th MIT license. See [License File](https://github.com/leapfrogtechnology/LF-Bulletin-board/blob/master/LICENSE.txt) for more information.
+
