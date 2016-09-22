@@ -10,14 +10,9 @@ Leapfrog Bulletin Board is a Web App that helps to build an interactive Kiosk.
 - Embed websites
 
 
-### Requirements
-
-- Heroku account
-
-
 ### Deploy on Heroku
 
-- Click here [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leapfrogtechnology/LF-Bulletin-board/tree/dev)
+- Click here [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/leapfrogtechnology/LF-Bulletin-board/tree/master)
 - Enter desired App Name
 - Click on “Deploy for Free” button
 - Click on “Manage App” button
@@ -30,10 +25,28 @@ Leapfrog Bulletin Board is a Web App that helps to build an interactive Kiosk.
 - Install Heroku Command Line  https://devcenter.heroku.com/articles/heroku-command-line
 - Open Terminal
 
+
+### Install on your computer
+
 ```bash
 - $ heroku login
 - $ heroku run python manage.py migrate --app my-bulletin-board
 - $ heroku run python manage.py createsuperuser --app my-bulletin-board
+```
+
+```bash
+$ git clone git@github.com:leapfrogtechnology/LF-Bulletin-board.git
+$ cd LF-Bulletin-board
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ python3 manage.py makemigrations
+$ python3 manage.py migrate
+$ python3 manage.py createsuperuser
+```
+
+```bash
+$ python3 manage.py runserver
 ```
 
 
