@@ -87,7 +87,7 @@ _Note: If you make changes in slide. Make sure you add new Google Docs URL or ju
 - Click on Save
 
 
-### License?
+### License
 
 - Leapfrog Bulletin Board is licensed under th MIT license. See [License File](https://github.com/leapfrogtechnology/LF-Bulletin-board/blob/master/LICENSE.txt) for more information.
 
