@@ -57,7 +57,7 @@ $ python3 manage.py runserver
 - Goto Embed tab
 - Choose Start slideshow as soon as the player loads and Restart the slideshow after the last slide
 - Click on publish, HTML embed appears
-- Just copy src of the &lt;iframe&gt; tag Eg. https://docs.google.com/presentation/d/1ETZi4bNQov9M5UEEnJEJgj3s40vZ_ORsddaeisUUcamE5kW0/embed?start=true&loop=true&delayms=3000
+- Just copy src of the &lt;iframe&gt; tag Eg. https://docs.google.com/presentation/d/1FWK0B0PBavrqYKFXbS2JwPn05SwKNsDz9e63Rs0_fuY/embed?start=true&loop=true&delayms=5000
 - Open bulletin board dashboard
 - Click on Kiosks
 - Click on ADD KIOSK
