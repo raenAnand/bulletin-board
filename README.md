@@ -46,6 +46,7 @@ $ python3 manage.py createsuperuser
 ```
 
 ```bash
+$ # Comment lf_kiosk/settings.py line number 87 to 92 and uncomment line number 83, 84 to use SQLite database instead of Postgres
 $ python3 manage.py runserver
 ```
 
