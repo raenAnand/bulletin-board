@@ -29,9 +29,9 @@ Leapfrog Bulletin Board is a Web App that helps to build an interactive Kiosk.
 ### Install on your computer
 
 ```bash
-- $ heroku login
-- $ heroku run python manage.py migrate --app my-bulletin-board
-- $ heroku run python manage.py createsuperuser --app my-bulletin-board
+$ heroku login
+$ heroku run python manage.py migrate --app my-bulletin-board
+$ heroku run python manage.py createsuperuser --app my-bulletin-board
 ```
 
 ```bash
