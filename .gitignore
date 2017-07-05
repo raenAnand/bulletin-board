@@ -1,2 +1,5 @@
 config.js
 *~
+logs/
+Capfile
+config/
