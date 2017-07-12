@@ -75,7 +75,7 @@
   bulletin.init();
 
   setInterval(function() {
-    date.innerText = utils.getTodayDate();
-    time.innerText = utils.getCurrentTime();
+    date.textContent = utils.getTodayDate();
+    time.textContent = utils.getCurrentTime();
   }, ONE_SECOND);
 })();
