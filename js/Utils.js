@@ -28,7 +28,7 @@ var Utils = function() {
     mm = mm < 10 ? '0' + mm : mm;
     ss = ss < 10 ? '0' + ss : ss;
 
-    return hh + ':' + mm + ':' + ss + ' ' + meridiem;
+    return hh + ':' + mm + ' ' + meridiem;
   }
 
   this.getTodayDate = function() {
@@ -45,7 +45,7 @@ var Utils = function() {
     var year = ts.getFullYear();
     var month = MONTH[ts.getMonth()];
 
-    return day + ', ' + month + ' ' + date + ' ' +  year;
+    return month + ' ' + date + ', ' +  year;
   }
 
   this.isTimeInBetween = function(fromTime, toTime) {
