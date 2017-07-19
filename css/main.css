@@ -2,6 +2,15 @@ body, html {
   overflow: hidden;
 }
 
+p {
+  text-align: center;
+  margin-top: 25%;
+}
+
+p img {
+  height: 64px;
+}
+
 .webview {
   border: 0;
   width: 100%;
@@ -61,7 +70,7 @@ h4 {
 
 .container img{
   top: 50%;
-  left: 50%;
+  left: 47%;
   position: absolute;
   transform: translateX(-50%);
   transform: translateY(-50%);
