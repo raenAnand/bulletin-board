@@ -25,12 +25,12 @@ footer {
   position: absolute;
   background: #E8F1F2;
   border-top: 1px solid #d0d7d8;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 footer img {
-   height: 54px;
+   height: 48px;
 }
 
 i {
@@ -74,47 +74,5 @@ h4 {
   position: absolute;
   transform: translateX(-50%);
   transform: translateY(-50%);
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1824px) {
-  footer {
-    height: 128px;
-    border-top: 2px solid #d0d7d8;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  footer img {
-     height: 108px;
-  }
-
-  i {
-    margin-left: 40px;
-  }
-
-  img {
-    margin-right: 48px;
-  }
-
-  h3, h4 {
-    margin-left: 20px;
-  }
-
-  h3 {
-    line-height: 108px;
-    font-size: 64px;
-  }
-
-  h4, .datetime {
-    line-height: 108px;
-    font-size: 52px;
-  }
-
 }
 
