@@ -29,6 +29,10 @@ footer {
   padding-bottom: 8px;
 }
 
+footer .row {
+  max-width: 100%;
+}
+
 footer img {
    height: 48px;
 }
