@@ -1,17 +1,19 @@
 ;(function() {
   var ONE_SECOND = 1000;
 
-  var webview;
   var jwPlayer;
-  var hidden = 1;
-  var cachedTitle;
+  var shown = 1;
+  var hidden = 0;
+  var webview = [];
   var utils = new Utils();
   var apiUrl = _CONFIG.apiUrl;
+  var cachedTitle = 'Leapfrog bulletin';
   var fetchInterval = _CONFIG.fetchInterval;
   var time = document.querySelector('#time');
   var date = document.querySelector('#date');
   var title = document.querySelector('#title');
   var container = document.querySelector('#container');
+
 
   var emptyContainer = function() {
     while (container.firstChild) {
@@ -25,35 +27,37 @@
     }
     emptyContainer();
 
-    var iframe = document.createElement('iframe');
-    iframe.setAttribute('scrolling', 'no');
-    iframe.setAttribute('class', 'webview');
-    iframe.setAttribute('name', 'webview[]');
-    iframe.setAttribute('src', 'spinner.html');
-    container.appendChild(iframe);
-
     var iframe_ = document.createElement('iframe');
     iframe_.setAttribute('scrolling', 'no');
     iframe_.setAttribute('class', 'webview');
-    iframe_.setAttribute('name', 'webview[]');
+    iframe_.setAttribute('name', 'webview[1]');
     iframe_.setAttribute('src', 'spinner.html');
-    iframe_.style.display = 'none';
+    iframe_.style.display = 'block';
     container.appendChild(iframe_);
+
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('scrolling', 'no');
+    iframe.setAttribute('class', 'webview');
+    iframe.setAttribute('name', 'webview[0]');
+    iframe.setAttribute('src', 'spinner.html');
+    iframe.style.display = 'none';
+    container.appendChild(iframe);
+
+    webview[0] = document.querySelector('iframe[name="webview[0]"]');
+    webview[1] = document.querySelector('iframe[name="webview[1]"]');
   }
 
   var slideRender = function(segement) {
-    webview = document.querySelectorAll('iframe[name="webview[]"]')
-
-    hidden = hidden ? 0 : 1;
     title.textContent = cachedTitle;
 
-    shown = hidden ? 0 : 1;
-    webview[shown].style.display = 'block';
-
+    cachedTitle = segement.title;
     webview[hidden].src = segement.url;
     webview[hidden].style.display = 'none';
 
-    cachedTitle = segement.title;
+    webview[shown].style.display = 'block';
+
+    shown = (shown) ? 0 : 1;
+    hidden = (hidden) ? 0 : 1;
   }
 
   var videoMode = function(playlist) {

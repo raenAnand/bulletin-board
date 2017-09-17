@@ -14,6 +14,7 @@ var Bulletin = function(url, interval, videoMode, slideMode, slideRender) {
   var videoMode;
   var slideIndex;
   var fetchInteval;
+  var cacheSlideIndex;
   var videoModeCallback;
   var slideModeCallabck;
   var nextSlideCallback;
@@ -107,20 +108,23 @@ var Bulletin = function(url, interval, videoMode, slideMode, slideRender) {
   }
 
   var initSlide = function() {
-    slideIndex = -1;
+    slideIndex = 0;
+    cacheSlideIndex = 0;
     slides = JSON.parse(localStorage.webpages);
     slides.sort(priority);
     nextSlide();
   }
 
   var nextSlide = function() {
-    slideIndex++;
-
     var slide = slides[slideIndex];
-    nextSlideCallback(slide);
+    cacheSlideIndex = (cacheSlideIndex < slides.length - 1) ? cacheSlideIndex + 1 : 0;
 
-    sliderId = setTimeout(function() {
-      if (slideIndex < slides.length - 1) {
+    var cacheSlide = slides[cacheSlideIndex];
+    nextSlideCallback(cacheSlide);
+
+    setTimeout(function() {
+      if (slideIndex < slides.length - 1 ) {
+        slideIndex++;
         nextSlide();
       } else {
         initSlide();
