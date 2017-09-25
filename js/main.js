@@ -52,11 +52,9 @@
 
     cachedTitle = segement.title;
     webview[hidden].src = segement.url;
-    // webview[hidden].style.display = 'none';
-    webview[hidden].style.opacity = 0;
+    webview[hidden].style.display = 'none';
 
-    // webview[shown].style.display = 'block';
-    webview[shown].style.opacity = 100;
+    webview[shown].style.display = 'block';
 
     shown = (shown) ? 0 : 1;
     hidden = (hidden) ? 0 : 1;
