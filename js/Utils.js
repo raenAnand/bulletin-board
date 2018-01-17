@@ -18,10 +18,18 @@ var Utils = function() {
 
     var meridiem;
     if (hh > 12) {
+      if(hh == 24){
+        meridiem = 'AM';
+      } else {
+        meridiem = 'PM';
+      }
       hh -= 12;
-      meridiem = 'PM';
     } else {
-      meridiem = 'AM';
+      if(hh == 12){
+        meridiem = 'PM';
+      } else {
+        meridiem = 'AM';
+      }
     }
 
     hh = hh < 10 ? '0' + hh : hh;
