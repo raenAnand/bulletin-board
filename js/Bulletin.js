@@ -43,8 +43,8 @@ var Bulletin = function(url, interval, videoMode, slideMode, slideRender) {
         localStorage.hasOwnProperty('webpages')) {
       cb();
     } else {
-      setTimeout(function() {//what is the reason for timeout of 5 seconds and call itself
-        read(cb);            //is it that after 5 seconds the localstorage will have those properties?
+      setTimeout(function() {
+        read(cb);
       }, FIVE_SECONDS);
     }
   }
@@ -64,13 +64,13 @@ var Bulletin = function(url, interval, videoMode, slideMode, slideRender) {
     if (videoMode === INIT) {
       slideMode = STOP;
       clearInterval(sliderId);
-      videoModeCallback(playlist);//jwplayer handles video playlist
+      videoModeCallback(playlist);
     }
 
     if (videoMode === STOP) {
       if (slideMode !== PLAY) {
         slideModeCallabck();
-        initSlide();//function that handles slides list
+        initSlide();
         slideMode = PLAY;
       }
     }
@@ -88,14 +88,14 @@ var Bulletin = function(url, interval, videoMode, slideMode, slideRender) {
       var video = videos[i];
 
       if (ts.getDay() === video.day &&
-          utils.isTimeInBetween(video.from, video.to)) {//what time range is this?
+          utils.isTimeInBetween(video.from, video.to)) {
         newPlaylist.push({
           file: video.url,
           title: video.title,
         });
       }
     }
-    //this block of code?
+
     if (playlist.length !== newPlaylist.length && newPlaylist.length > 0) {
       videoMode = INIT;
     } else if (playlist.length === newPlaylist.length && newPlaylist.length > 0) {
@@ -136,5 +136,5 @@ var Bulletin = function(url, interval, videoMode, slideMode, slideRender) {
      return parseInt(obj1.priority, 10) - parseInt(obj2.priority, 10);
   }
 
-  construct();//will this be called before init; at the time of creating new object of bulletin
+  construct();
 };

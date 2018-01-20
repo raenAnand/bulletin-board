@@ -17,8 +17,8 @@
 
   var emptyContainer = function() {
     while (container.firstChild) {
-      container.firstChild.remove();//removing all the child components inside container
-    }                               //cant this remove jwplayer?
+      container.firstChild.remove();
+    }
   }
 
   var slideMode = function() {
@@ -56,8 +56,8 @@
 
     webview[shown].style.display = 'block';
 
-    shown = (shown) ? 0 : 1;//toggling the value of shown?
-    hidden = (hidden) ? 0 : 1;//toggling the value of hidden?
+    shown = (shown) ? 0 : 1;
+    hidden = (hidden) ? 0 : 1;
   }
 
   var videoMode = function(playlist) {
