@@ -12,6 +12,7 @@ module.exports = {
     charset: 'utf8',
     timezone: 'UTC'
   },
+  useNullAsDefault: true,
   migrations: {
     tableName: 'migrations',
     directory: './migrations',
