@@ -139,6 +139,14 @@ a.active {
   color: rgb(71, 202, 93);
 }
 
+.sidemenu-wrapper ul li a span {
+  float: left;
+}
+
+.sidemenu-wrapper ul li a span:nth-child(2) {
+  float: right;
+}
+
 .main-container-wrapper {
   width: 85%;
 }
