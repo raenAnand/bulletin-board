@@ -95,7 +95,8 @@ body {
   height: 40px;
   border-radius: 20px;
   overflow: hidden;
-  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .image-wrapper img {
@@ -114,6 +115,11 @@ body {
   padding: 0;
 }
 
+.sidemenu-wrapper h3 {
+  text-align: center;
+  color: rgb(44, 161, 64);
+}
+
 .sidemenu-wrapper ul li a{
   text-decoration: none;
   text-align: center;
@@ -126,5 +132,32 @@ body {
 }
 
 .sidemenu-wrapper ul li a:hover {
-  color: rgb(71, 202, 93)
+  color: rgb(71, 202, 93);
+}
+
+a.active {
+  color: rgb(71, 202, 93);
+}
+
+.main-container-wrapper {
+  width: 85%;
+}
+
+.add-entry-form {
+  width: 60%;
+}
+
+.add-entry-form Button {
+  border: none;
+  background-color: rgb(58, 156, 74); 
+  color: white;
+}
+
+.navbar {
+  /* border-color: white !important; */
+  border-radius: 0px !important;
+}
+
+.container {
+  width: 85% !important;
 }

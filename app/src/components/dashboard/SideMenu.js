@@ -4,10 +4,13 @@ class SideMenu extends Component {
 
   render () {
     return (
-      <ul>
-        <li><a href="#">Add</a></li>
-        <li><a href="#">List</a></li>
-      </ul>
+      <div>
+        <h3>Bulletin Dashboard</h3>
+        <ul>
+          <li><a href="#">Add</a></li>
+          <li><a href="#">List</a></li>
+        </ul>
+      </div>
     );
   }
 

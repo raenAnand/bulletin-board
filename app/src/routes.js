@@ -11,7 +11,7 @@ const baseHref = process.env.BASE_HREF || '/';
 
 const Router = () => (
   <BrowserRouter basename={baseHref}>
-    <div className="container">
+    <div>
       <Switch>
         <Route exact path={routeConstants.HOME} component={Home} />
         <Route exact path={routeConstants.DASHBOARD} component={Dashboard} />        
