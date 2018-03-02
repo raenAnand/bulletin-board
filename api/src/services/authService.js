@@ -38,7 +38,6 @@ export function logoutUser(id) {
   return sessionService.deleteSession(id);
 }
 
-
 /**
  * 
  * @param {*} loginParams 
