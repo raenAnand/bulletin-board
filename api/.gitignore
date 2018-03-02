@@ -35,4 +35,4 @@ coverage
 *.swp
 
 # DB file
-bulletin-board.db
+bulletin_board.db

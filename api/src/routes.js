@@ -1,5 +1,7 @@
 import { Router } from 'express';
 import swaggerSpec from './utils/swagger';
+
+import authController from './controllers/auth';
 import usersController from './controllers/users';
 import bulletinsController from './controllers/bulletins';
 /**
@@ -52,6 +54,7 @@ router.get('/', (req, res) => {
   });
 });
 
+router.use('/', authController);
 router.use('/users', usersController);
 router.use('/bulletins', bulletinsController);
 export default router;
