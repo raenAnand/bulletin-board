@@ -15,7 +15,7 @@ export default function ensureToken(req, res, next) {
     .then(response => {
       req.id = response.encryptedData.id;
       console.log(req.id);
-      return next();
+      next();
     })
     .catch(error => next(error));
 }

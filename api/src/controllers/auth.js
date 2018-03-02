@@ -3,6 +3,7 @@ import { Router } from 'express';
 import * as CONSTANT from '../const';
 import * as authService from '../services/authService';
 import * as tokenService from '../services/tokenService';
+import validateRefreshToken from '../middlewares/validateToken';
 
 const router = Router();
 
@@ -23,12 +24,10 @@ router.post('/login', (req, res, next) => {
 /**
  * Refresh access token
  */
-router.get('/refresh', (req, res, next) => {
-  let requestToken = req.headers.authorization.substring(CONSTANT.BEARER_LENGTH);
-  console.log('--------', requestToken);
+router.get('/refresh',validateRefreshToken, (req, res, next) => {
 
   tokenService
-    .verifyRefreshToken(requestToken)
+    .verifyRefreshToken(req.token)
     .then(data => res.json({ accessToken: data }))
     .catch(err => next(err));
 })

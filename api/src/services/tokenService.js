@@ -1,7 +1,7 @@
 import * as jwt from '../utils/jwt'
 
 /** */
-export  function generateAcessToken() {
+export function generateAcessToken() {
   return jwt.generateAccessToken();
 }
 
@@ -26,7 +26,8 @@ export function verifyAccessToken(accessToken) {
  * @param {*} refreshToken 
  */
 export async function verifyRefreshToken(refreshToken) {
-  let decodedToken = await jwt.verifyRefreshToken(refreshToken);
+  let decodedToken = await jwt.verifyRefreshToken(refreshToken)
 
   return jwt.generateAccessToken(decodedToken.encryptedData);
 }
+
