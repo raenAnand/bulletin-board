@@ -7,16 +7,6 @@ class NavBar extends Component {
 
   render() {
     return (
-      // <div className="navbar-wrapper clearfix">
-      //   <div className="left-content">
-      //     <span className="dashboard-text">Bulletin Dashboard</span>
-      //   </div>
-      //   <div className="right-content">
-      //     <div className="image-wrapper">
-      //       <img src={placeholder} alt="placeholder image"/>        
-      //     </div>
-      //   </div>
-      // </div>
       <Navbar>
         <Nav pullRight>
           <NavDropdown title={
@@ -24,7 +14,6 @@ class NavBar extends Component {
               <img src={placeholder} alt="placeholder image"/>        
             </div>
           }>
-            <MenuItem>Profile</MenuItem>
             <MenuItem>Logout</MenuItem>              
           </NavDropdown>
         </Nav>

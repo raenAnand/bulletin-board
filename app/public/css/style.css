@@ -117,7 +117,7 @@ body {
 
 .sidemenu-wrapper h3 {
   text-align: center;
-  color: rgb(44, 161, 64);
+  color: rgb(75, 196, 95);
 }
 
 .sidemenu-wrapper ul li a{
@@ -125,18 +125,18 @@ body {
   text-align: center;
   background-color: rgb(73, 66, 80);
   display: block;
-  padding: 10px;
+  padding: 10px 15px;;
   cursor: pointer;
   color: white;
   font-weight: bolder;
 }
 
 .sidemenu-wrapper ul li a:hover {
-  color: rgb(71, 202, 93);
+  color: rgb(106, 214, 124);
 }
 
-a.active {
-  color: rgb(71, 202, 93);
+.activeNav {
+  color: rgb(106, 214, 124) !important;
 }
 
 .sidemenu-wrapper ul li a span {
@@ -152,10 +152,17 @@ a.active {
 }
 
 .add-entry-form {
-  width: 60%;
+  width: 500px;;
 }
 
 .add-entry-form Button {
+  display: inline-block;
+}
+.add-entry-form button.cancel-button {
+  margin-left: 20px;
+}
+
+.add-entry-form button.submit-button {
   border: none;
   background-color: rgb(58, 156, 74); 
   color: white;
@@ -168,4 +175,52 @@ a.active {
 
 .container {
   width: 85% !important;
+}
+
+.section .form-container {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px solid rgb(159, 184, 155);
+  background-color: #ffffff;
+}
+
+.add-entry-button span{
+  display: inline-block;
+}
+
+.add-entry-button span:last-child {
+  margin-left: 10px;
+}
+
+.bulletin-table {
+  width: 100%;
+}
+
+.bulletin-table thead{
+  border-bottom: 2px solid gray;
+}
+
+.bulletin-table tbody tr {
+  border-bottom: 1px solid gray;
+}
+
+.bulletin-table td {
+  padding: 3px 5px;
+}
+
+.bulletin-table td span {
+  display: inline-block;
+}
+
+.bulletin-table td span:last-child {
+  margin-left: 10px;
+}
+
+.edit-icon {
+  color: rgb(93, 142, 189);
+}
+
+.cancel-icon {
+  color: rgb(182, 35, 60);
 }
