@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import swaggerSpec from './utils/swagger';
 
+import swaggerSpec from './utils/swagger';
 import authController from './controllers/auth';
 import usersController from './controllers/users';
 import ensureToken from './middlewares/ensureToken';

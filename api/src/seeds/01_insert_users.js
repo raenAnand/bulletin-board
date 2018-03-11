@@ -14,13 +14,15 @@ export function seed(knex, Promise) {
         // Inserts seed entries
         knex('users').insert([
           {
+            name: 'Ayush Ghimire',
             username: 'ayush',
-            password: 'ayush',
+            password: 'ghimire',
             updated_at: new Date()
           },
           {
+            name: 'Basanta Maharjan',
             username: 'basanta',
-            password: 'basanta',
+            password: 'maharjan',
             updated_at: new Date()
           }
         ])

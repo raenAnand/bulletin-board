@@ -2,7 +2,7 @@ import * as CONSTANT from '../const';
 import * as tokenService from '../services/tokenService';
 
 /**
- * 
+ * Verifies access token
  * @param {*} req 
  * @param {*} res 
  * @param {*} next 
@@ -14,7 +14,6 @@ export default function ensureToken(req, res, next) {
     .verifyAccessToken(req.token)
     .then(response => {
       req.id = response.encryptedData.id;
-      console.log(req.id);
       next();
     })
     .catch(error => next(error));

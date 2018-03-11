@@ -5,7 +5,7 @@ import * as tokenService from './tokenService';
 import * as sessionService from './sessionService';
 
 /**
- * 
+ * Login Users
  * @param {*} loginParams 
  */
 export async function loginUser(loginParams) {
@@ -21,7 +21,7 @@ export async function loginUser(loginParams) {
       },
       tokens
     };
-    
+
     await sessionService.createSession(userInfo);
 
     return userInfo;
@@ -31,7 +31,7 @@ export async function loginUser(loginParams) {
 }
 
 /**
- * 
+ * Log Out User
  * @param {*} id 
  */
 export function logoutUser(id) {
@@ -39,11 +39,14 @@ export function logoutUser(id) {
 }
 
 /**
- * 
+ * Verify Users
  * @param {*} loginParams 
  */
 export function verifyUser(loginParams) {
-  return new User({ username: loginParams.username, password: loginParams.password })
+  return new User({
+    username: loginParams.username,
+    password: loginParams.password
+  })
     .fetch()
     .then(user => {
       if (!user) {

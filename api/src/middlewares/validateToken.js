@@ -10,10 +10,9 @@ export default function validateRefreshToken(req, res, next) {
     refresh_token: req.token
   })
     .fetch()
-    .then((data) => {
-      console.log(data);
+    .then(data => {
       if (!data) {
-        throw new Boom.notFound("Token Not Found");
+        throw new Boom.notFound('Token Not Found');
       }
       next();
     })
