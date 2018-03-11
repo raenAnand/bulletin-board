@@ -8,7 +8,7 @@ import validateRefreshToken from '../middlewares/validateToken';
 const router = Router();
 
 /**
- * Login user
+ * POST /api/login
  */
 router.post('/login', (req, res, next) => {
   authService
@@ -18,7 +18,7 @@ router.post('/login', (req, res, next) => {
 });
 
 /**
- * Refresh access token
+ * GET /api/refresh
  */
 router.get('/refresh', validateRefreshToken, (req, res, next) => {
   tokenService
@@ -28,7 +28,7 @@ router.get('/refresh', validateRefreshToken, (req, res, next) => {
 });
 
 /**
- * Logout user
+ * DELETE /api/logout
  */
 router.delete('/logout', (req, res, next) => {
   let requestToken = req.headers.authorization.substring(

@@ -6,7 +6,9 @@ import * as sessionService from './sessionService';
 
 /**
  * Login Users
+ * 
  * @param {*} loginParams 
+ * @return {Object}
  */
 export async function loginUser(loginParams) {
   try {
@@ -32,7 +34,9 @@ export async function loginUser(loginParams) {
 
 /**
  * Log Out User
- * @param {*} id 
+ * 
+ * @param {*} id
+ * @return {Promise} 
  */
 export function logoutUser(id) {
   return sessionService.deleteSession(id);
@@ -41,6 +45,7 @@ export function logoutUser(id) {
 /**
  * Verify Users
  * @param {*} loginParams 
+ * @return {Promise}
  */
 export function verifyUser(loginParams) {
   return new User({
