@@ -1,8 +1,8 @@
 const routeConstants = {
   HOME: '/',
+  LOGIN: '/login',  
   GUIDES: '/guides',
-  DASHBOARD: '/dashboard',
-  LOGIN: '/login'
+  DASHBOARD: '/dashboard'
   
 };
 

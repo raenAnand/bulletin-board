@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome';
 import { NavLink } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
 
 class SideMenu extends Component {
 

@@ -1,6 +1,6 @@
+import Modal from 'react-modal';
 import React, { Component} from 'react';
 import FontAwesome from 'react-fontawesome';
-import Modal from 'react-modal';
 import { FormGroup, ControlLabel, FormControl, Button} from 'react-bootstrap';
 
 
